@@ -1,0 +1,51 @@
+.home {
+  position: relative;
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(100vh - var(--header-height));
+  padding: 0 30px;
+  row-gap: 5rem;
+}
+
+.home__title {
+  font-size: 3rem;
+  color: var(--white-color);
+  line-height: 1;
+  letter-spacing: 0.1rem;
+}
+
+.home__title span {
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.home__scroll {
+  padding-bottom: var(--mb-4);
+}
+
+.home__scroll-link {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  color: var(--white-color);
+}
+
+.home__scroll-link:hover {
+  text-shadow: -5px -2px 13px rgb(0, 0, 0);
+}
+
+.home__scroll-link:hover .arrowDown {
+  transform: translateY(-10px);
+  transition: all 0.5s ease-out;
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 295px;
+}

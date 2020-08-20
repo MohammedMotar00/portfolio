@@ -1,17 +1,11 @@
 import React, { useRef, useEffect } from "react";
 
-import ScrollReveal from "scrollreveal";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Portfolio({ setPortfolioActive }) {
   // Ref
   const portfolioRef = useRef(null);
-
-  const portfolioImg1 = useRef(null);
-  const portfolioImg2 = useRef(null);
-  const portfolioImg3 = useRef(null);
-  const portfolioImg4 = useRef(null);
-  const portfolioImg5 = useRef(null);
-  const portfolioImg6 = useRef(null);
 
   // Portfolio check
   const portfolioCheck = () => {
@@ -32,93 +26,105 @@ function Portfolio({ setPortfolioActive }) {
   useEffect(() => {
     document.addEventListener("scroll", portfolioCheck);
 
-    const sr = ScrollReveal({
-      origin: "top",
-      distance: "80px",
-      duration: 2000,
-      reset: true,
-    });
-
-    sr.reveal(portfolioImg1.current, { interval: 200 });
-    sr.reveal(portfolioImg2.current, { interval: 200 });
-    sr.reveal(portfolioImg3.current, { interval: 200 });
-    sr.reveal(portfolioImg4.current, { interval: 200 });
-    sr.reveal(portfolioImg5.current, { interval: 200 });
-    sr.reveal(portfolioImg6.current, { interval: 200 });
+    AOS.init({ duration: 2000, mirror: true });
   });
 
   return (
-    <section ref={portfolioRef} class="portfolio section" id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
+    <section ref={portfolioRef} className="portfolio section" id="portfolio">
+      <h2 className="section-title">Portfolio</h2>
 
-      <div class="portfolio__container bd-grid">
-        <div ref={portfolioImg1} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work1.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+      <div className="portfolio__container bd-grid">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/wSvHMkG/Screenshot-10.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://tic-tac-toe-game-3f67b.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>
         </div>
 
-        <div ref={portfolioImg2} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work2.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/DWWy4Dh/Screenshot-2.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://connect-four-game-f50f5.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>
         </div>
 
-        <div ref={portfolioImg3} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work3.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/gD3FSh0/Screenshot-3.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://netflix-clone-fd9e4.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>
         </div>
 
-        <div ref={portfolioImg4} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work4.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/jHv2fX8/Screenshot-4.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://website-clone.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>
         </div>
 
-        <div ref={portfolioImg5} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work5.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/6yGBGzT/Screenshot-5.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://biltema-clone.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>
         </div>
 
-        <div ref={portfolioImg6} class="portfolio__img">
-          <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/work6.jpg"
-            alt=""
-          />
-          <div class="portfolio__link">
-            <a href="#" class="portfolio__link-name">
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src="https://i.ibb.co/svWSVG1/Screenshot-6.png" alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://clone-7da8f.web.app/"
+              className="portfolio__link-name"
+            >
               View details
             </a>
           </div>

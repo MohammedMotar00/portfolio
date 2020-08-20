@@ -2,12 +2,10 @@ import React, { useEffect, useRef } from "react";
 
 import myImg from "../../Img/portfolio1.png";
 
-import "../../App.css";
-
-// import ScrollReveal from "scrollreveal";
-// import ScrollReveal from "../../scrollReveal";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 function Home({ setHomeActive, setStartActive }) {
   // Ref
@@ -30,21 +28,6 @@ function Home({ setHomeActive, setStartActive }) {
     }
   };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", homeCheck);
-
-  //   const sr = ScrollReveal({
-  //     origin: "top",
-  //     distance: "80px",
-  //     duration: 2000,
-  //     reset: true,
-  //   });
-
-  //   sr.reveal(homeImg, { origin: "right", delay: 400 });
-  //   sr.reveal(homeTitle, {});
-  //   sr.reveal(homeScroll, { delay: 400 });
-  // }, []);
-
   useEffect(() => {
     window.addEventListener("scroll", homeCheck);
 
@@ -54,19 +37,26 @@ function Home({ setHomeActive, setStartActive }) {
   return (
     <section className="home" id="home" ref={homeRef}>
       <div className="home__container bg-grid">
-        <h1 class="home__title">
-          <span>Mohammed</span>
+        <h1 class="home__title" data-aos="fade-down">
+          <span>Welcome To</span>
           <br />
-          Motar
+          <span>My Portfolio</span>
         </h1>
 
-        <div className="home__scroll">
+        <div className="home__scroll" data-aos="fade-down" data-aos-delay="400">
           <a href="#about" className="home__scroll-link">
-            <i className="bx bx-up-arrow-alt"></i>Scroll down
+            <ArrowUpwardIcon className="arrowDown" />
+            Scroll down
           </a>
         </div>
 
-        <img src={myImg} alt="" className="home__img" data-aos="fade-left" />
+        <img
+          src={myImg}
+          alt=""
+          className="home__img"
+          data-aos="fade-left"
+          data-aos-delay="550"
+        />
       </div>
     </section>
   );

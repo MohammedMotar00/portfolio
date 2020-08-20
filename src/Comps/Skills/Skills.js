@@ -1,17 +1,11 @@
 import React, { useRef, useEffect } from "react";
 
-import ScrollReveal from "scrollreveal";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills({ setSkillsActive }) {
   // Ref
   const skillsRef = useRef(null);
-  const skillsSubtitle = useRef(null);
-  const skillsName1 = useRef(null);
-  const skillsName2 = useRef(null);
-  const skillsName3 = useRef(null);
-  const skillsName4 = useRef(null);
-  const skillsName5 = useRef(null);
-  const skillsImg = useRef(null);
 
   // Skills check
   const skillsCheck = () => {
@@ -32,71 +26,60 @@ function Skills({ setSkillsActive }) {
   useEffect(() => {
     document.addEventListener("scroll", skillsCheck);
 
-    const sr = ScrollReveal({
-      origin: "top",
-      distance: "80px",
-      duration: 2000,
-      reset: true,
-    });
-
-    sr.reveal(skillsSubtitle.current, {});
-    sr.reveal(skillsName1.current, {
-      distance: "20px",
-      delay: 20,
-      interval: 100,
-    });
-    sr.reveal(skillsName2.current, {
-      distance: "30px",
-      delay: 20,
-      interval: 100,
-    });
-    sr.reveal(skillsName3.current, {
-      distance: "40px",
-      delay: 20,
-      interval: 100,
-    });
-    sr.reveal(skillsName4.current, {
-      distance: "40px",
-      delay: 20,
-      interval: 100,
-    });
-    sr.reveal(skillsName5.current, {
-      distance: "50px",
-      delay: 20,
-      interval: 100,
-    });
-    sr.reveal(skillsImg.current, { delay: 400 });
+    AOS.init({ duration: 2000, offset: 20, mirror: true });
   }, []);
 
   return (
-    <section ref={skillsRef} class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
+    <section ref={skillsRef} className="skills section" id="skills">
+      <h2 className="section-title">Skills</h2>
 
-      <div class="skills__container bd-grid">
-        <div class="skills__box">
-          <h3 ref={skillsSubtitle} class="skills__subtitle">
+      <div className="skills__container bd-grid">
+        <div className="skills__box">
+          <h3 className="skills__subtitle" data-aos="fade-down">
             Development
           </h3>
-          <span ref={skillsName1} class="skills__name">
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             HTML
           </span>
-          <span ref={skillsName2} class="skills__name">
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             CSS
           </span>
-          <span ref={skillsName3} class="skills__name">
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
             JAVASCRIPT
           </span>
-          <span ref={skillsName4} class="skills__name">
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
             SCSS
           </span>
-          <span ref={skillsName5} class="skills__name">
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
             REACT
           </span>
         </div>
 
-        <div ref={skillsImg} class="skills__img">
+        <div className="skills__img" data-aos="fade-down" data-aos-delay="300">
           <img
-            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-JhonDoe/master/assets/img/skill.jpg"
+            // src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            // src="https://www.haconsultancies.com/wp-content/uploads/2017/10/html-programming-1030x682.jpg"
+            src="https://sdtimes.com/wp-content/uploads/2016/03/0303.sdt-ada.png"
             alt=""
           />
         </div>

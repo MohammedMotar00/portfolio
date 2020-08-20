@@ -1,23 +1,11 @@
 import React, { useEffect, useRef } from "react";
 
-import ScrollReveal from "scrollreveal";
-
-import "../../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact({ setContactActive }) {
   // Ref
   const contactRef = useRef(null);
-
-  const contactSubtitle1 = useRef(null);
-  const contactSubtitle2 = useRef(null);
-  const contactSubtitle3 = useRef(null);
-  const contactText1 = useRef(null);
-  const contactText2 = useRef(null);
-  const contactText3 = useRef(null);
-  const contactInput1 = useRef(null);
-  const contactInput2 = useRef(null);
-  const contactInput3 = useRef(null);
-  const contactButton = useRef(null);
 
   // Contact check
   const contactCheck = () => {
@@ -35,86 +23,104 @@ function Contact({ setContactActive }) {
     }
   };
 
+  const preventRefresh = (e) => {
+    e.preventDefault();
+    e.target.reset();
+  };
+
   useEffect(() => {
     document.addEventListener("scroll", contactCheck);
 
-    const sr = ScrollReveal({
-      origin: "top",
-      distance: "80px",
-      duration: 2000,
-      reset: true,
-    });
-    sr.reveal(contactSubtitle1.current, { reset: false });
-    sr.reveal(contactSubtitle2.current, { reset: false });
-    sr.reveal(contactSubtitle3.current, { reset: false });
-    sr.reveal(contactText1.current, { interval: 200, reset: false });
-    sr.reveal(contactText2.current, { interval: 200, reset: false });
-    sr.reveal(contactText3.current, { interval: 200, reset: false });
-    sr.reveal(contactInput1.current, { delay: 400, reset: false });
-    sr.reveal(contactInput2.current, { delay: 400, reset: false });
-    sr.reveal(contactInput3.current, { delay: 400, reset: false });
-    sr.reveal(contactButton.current, { delay: 600, reset: false });
+    AOS.init({ duration: 2000, mirror: true });
   }, []);
 
   return (
-    <section ref={contactRef} class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
+    <section ref={contactRef} className="contact section" id="contact">
+      <h2 className="section-title">Contact</h2>
 
-      <div class="contact__container bd-grid">
-        <div class="contact__info">
-          <h3 ref={contactSubtitle1} class="contact__subtitle">
+      <div className="contact__container bd-grid">
+        <div className="contact__info">
+          <h3
+            className="contact__subtitle"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
             EMAIL
           </h3>
-          <span ref={contactText1} class="contact__text">
+          <span
+            className="contact__text"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
             mohammed.motar.mm@gmail.com
           </span>
 
-          <h3 ref={contactSubtitle2} class="contact__subtitle">
+          <h3
+            className="contact__subtitle"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
+            {" "}
             PHONE
           </h3>
-          <span ref={contactText2} class="contact__text">
-            072 281 63 30
+          <span
+            className="contact__text"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
+            (+46) 722 816 330
           </span>
 
-          <h3 ref={contactSubtitle3} class="contact__subtitle">
+          <h3
+            className="contact__subtitle"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
             ADRESS
           </h3>
-          <span ref={contactText3} class="contact__text">
+          <span
+            className="contact__text"
+            data-aos-duration="1300"
+            data-aos="fade-down"
+          >
             Bokvägen 15A
           </span>
         </div>
 
-        <form action="" class="contact__form">
-          <div class="contact__inputs">
+        <form onSubmit={preventRefresh} className="contact__form">
+          <div className="contact__inputs">
             <input
-              ref={contactInput1}
               type="text"
+              name="name"
               placeholder="Name"
-              class="contact__input"
+              className="contact__input"
+              data-aos="fade-down"
+              data-aos-duration="1300"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
-              class="contact__input"
-              ref={contactInput2}
+              className="contact__input"
+              data-aos="fade-down"
+              data-aos-duration="1300"
             />
           </div>
 
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
-            class="contact__input"
-            ref={contactInput3}
+            placeholder="Your message..."
+            className="contact__input"
+            data-aos-duration="1300"
+            data-aos="fade-down"
           ></textarea>
 
-          <input
-            ref={contactButton}
-            type="submit"
-            value="Send"
-            class="contact__button"
-          />
+          <button type="submit" className="contact__button">
+            Send
+          </button>
         </form>
       </div>
     </section>
