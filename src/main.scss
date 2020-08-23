@@ -210,7 +210,7 @@ img {
 
 @media (max-width: 580px) {
   .home__img {
-    width: 320px;
+    width: 280px;
   }
 }
 
@@ -220,7 +220,7 @@ img {
   }
 
   .home__img {
-    width: 300px;
+    width: 260px;
   }
 }
 
@@ -230,7 +230,7 @@ img {
   }
 
   .home__img {
-    width: 280px;
+    width: 250px;
   }
 }
 
@@ -242,6 +242,12 @@ img {
   .home__img {
     width: 240px;
     bottom: 10%;
+  }
+}
+
+@media (max-width: 470px) and (max-height: 550px) {
+  .home__img {
+    width: 200px;
   }
 }
 
