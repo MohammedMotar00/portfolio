@@ -8,6 +8,7 @@ import myImg from "../../Img/portfolio1.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { blue } from "@material-ui/core/colors";
 
 function About({ setAboutActive }) {
   // Ref
@@ -50,7 +51,7 @@ function About({ setAboutActive }) {
             data-aos="fade-down"
             data-aos-delay="300"
           >
-            I'm Mohammed Motar
+            I am Mohammed Motar
           </h2>
           <span
             className="about__profession"
@@ -60,10 +61,21 @@ function About({ setAboutActive }) {
             Front-End Developer
           </span>
           <p className="about__text" data-aos="fade-down" data-aos-delay="500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo
+            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo
             possimus temporibus nobis, suscipit ab dolore sequi nihil dolorem
             accusamus. Et aut quaerat minus voluptatem explicabo quis ea,
-            deserunt eligendi.
+            deserunt eligendi. */}
+            I'm a 20 years old student who is studying FrontEnd developing in
+            Helsingborg college - EC Utbildning! <br /> <br /> This is my second
+            year in college! I have learned much things until today, because i'm
+            a fast learner guy who have learned nearly everything from just
+            using google. <br /> I like to learn more and more, because that's
+            what i like to do in my spare time! <br /> <br /> If you want to
+            know more about me, feel free to contact me! <br /> You can find
+            more information about me in{" "}
+            <a href="#contact" style={{ color: "blue" }}>
+              contact page!
+            </a>
           </p>
 
           <div className="about__social">

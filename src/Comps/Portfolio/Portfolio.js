@@ -39,7 +39,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/wSvHMkG/Screenshot-10.png" alt="" />
+          <img src="https://i.ibb.co/5MyLWfp/Screenshot-10.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://tic-tac-toe-game-3f67b.web.app/"
@@ -55,7 +55,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/DWWy4Dh/Screenshot-2.png" alt="" />
+          <img src="https://i.ibb.co/M8fQ4x0/Screenshot-2.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://connect-four-game-f50f5.web.app/"
@@ -71,7 +71,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/gD3FSh0/Screenshot-3.png" alt="" />
+          <img src="https://i.ibb.co/q5ZvcV0/Screenshot-3.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://netflix-clone-fd9e4.web.app/"
@@ -87,7 +87,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/jHv2fX8/Screenshot-4.png" alt="" />
+          <img src="https://i.ibb.co/T272XwP/Screenshot-4.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://website-clone.web.app/"
@@ -103,7 +103,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/6yGBGzT/Screenshot-5.png" alt="" />
+          <img src="https://i.ibb.co/5LkGSHX/Screenshot-5.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://biltema-clone.web.app/"
@@ -119,7 +119,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/svWSVG1/Screenshot-6.png" alt="" />
+          <img src="https://i.ibb.co/H7KRWn5/Screenshot-6.png" alt="" />
           <div className="portfolio__link">
             <a
               href="https://clone-7da8f.web.app/"
