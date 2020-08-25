@@ -61,18 +61,12 @@ function About({ setAboutActive }) {
             Front-End Developer
           </span>
           <p className="about__text" data-aos="fade-down" data-aos-delay="500">
-            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo
-            possimus temporibus nobis, suscipit ab dolore sequi nihil dolorem
-            accusamus. Et aut quaerat minus voluptatem explicabo quis ea,
-            deserunt eligendi. */}
-            I'm a 20 years old student who is studying FrontEnd developing in
+            I'm a 20 years old and i am studying FrontEnd developing in
             Helsingborg college - EC Utbildning! <br /> <br /> This is my second
-            year in college! I have learned much things until today, because i'm
-            a fast learner guy who have learned nearly everything from just
-            using google. <br /> I like to learn more and more, because that's
-            what i like to do in my spare time! <br /> <br /> If you want to
-            know more about me, feel free to contact me! <br /> You can find
-            more information about me in{" "}
+            year in college! I have learned a lot of things until today. I am a
+            fast learner and flexible guy that can use google to solve the
+            problems. <br /> I am enjoying programming in my spare time. <br />{" "}
+            <br /> If you want to know more about me, you can find me here{" "}
             <a href="#contact" style={{ color: "blue" }}>
               contact page!
             </a>
