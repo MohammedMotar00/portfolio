@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -9,8 +9,15 @@ import myImg from "../../Img/portfolio1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { blue } from "@material-ui/core/colors";
+import { Button, List, ListItem, ListItemText } from "@material-ui/core";
+import { Modal } from "react-bootstrap";
+import Eng from "../CV/Eng";
+import Swe from "../CV/Swe";
 
 function About({ setAboutActive }) {
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
   // Ref
   const aboutRef = useRef(null);
 
@@ -28,6 +35,10 @@ function About({ setAboutActive }) {
     } else {
       setAboutActive(false);
     }
+  };
+
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
   };
 
   useEffect(() => {
@@ -60,13 +71,79 @@ function About({ setAboutActive }) {
           >
             Front-End Developer
           </span>
-          <p className="about__text" data-aos="fade-down" data-aos-delay="500">
+          {/* <p className="about__text" data-aos="fade-down" data-aos-delay="500">
             I'm a 20 years old and i am studying FrontEnd developing in
             Helsingborg college - EC Utbildning! <br /> <br /> This is my second
             year in college! I have learned a lot of things until today. I am a
             fast learner and flexible guy that can use google to solve the
             problems. <br /> I am enjoying programming in my spare time. <br />{" "}
             <br /> If you want to know more about me, you can find me here{" "}
+            <a href="#contact" style={{ color: "blue" }}>
+              contact page!
+            </a>
+          </p> */}
+
+          <p className="about__text" data-aos="fade-down" data-aos-delay="500">
+            I'm a 21 years old and i am Front-end Developer <br /> <br /> I
+            studied two years in Helsingborg college - EC Utbildning! <br /> I
+            have learned a lot of things until today. I am a fast learner and
+            flexible guy that can use google to solve the problems. <br />
+            <br /> You can read my CV{" "}
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => setOpenModal(true)}
+            >
+              here!
+            </Button>
+            <Modal
+              show={openModal}
+              onHide={() => setOpenModal(false)}
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                  <List component="nav" aria-label="main mailbox folders">
+                    <div className="modal_language">
+                      <ListItem
+                        button
+                        selected={selectedIndex === 0}
+                        onClick={(event) => handleListItemClick(event, 0)}
+                      >
+                        <ListItemText primary="Eng" />
+                      </ListItem>
+
+                      <ListItem
+                        button
+                        selected={selectedIndex === 1}
+                        onClick={(event) => handleListItemClick(event, 1)}
+                      >
+                        <ListItemText primary="Swe" />
+                      </ListItem>
+                    </div>
+                  </List>
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                {/* <h4>Centered Modal</h4>
+                <p>
+                  Cras mattis consectetur purus sit amet fermentum. Cras justo
+                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                  risus, porta ac consectetur ac, vestibulum at eros.
+                </p> */}
+                {selectedIndex == 0 && <Eng />}
+                {selectedIndex == 1 && <Swe />}
+              </Modal.Body>
+              <Modal.Footer>
+                <Button onClick={() => setOpenModal(false)}>
+                  {selectedIndex == 0 ? "Close" : "Stäng"}
+                </Button>
+              </Modal.Footer>
+            </Modal>
+            <br /> <br /> If you want to know more about me, you can find me
+            here{" "}
             <a href="#contact" style={{ color: "blue" }}>
               contact page!
             </a>

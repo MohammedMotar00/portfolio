@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-
+import image from "../../Img/image.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -69,9 +69,72 @@ function Skills({ setSkillsActive }) {
           <span
             className="skills__name"
             data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            TAILWIND CSS
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
             data-aos-delay="800"
           >
             REACT
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            REDUX
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            NEXT.JS
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            VUE
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            VUEX
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            VUETIFY
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            PHP
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            LARAVEL
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            WORDPRESS
           </span>
         </div>
 
@@ -79,7 +142,8 @@ function Skills({ setSkillsActive }) {
           <img
             // src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             // src="https://www.haconsultancies.com/wp-content/uploads/2017/10/html-programming-1030x682.jpg"
-            src="https://sdtimes.com/wp-content/uploads/2016/03/0303.sdt-ada.png"
+            // src="https://sdtimes.com/wp-content/uploads/2016/03/0303.sdt-ada.png"
+            src={image}
             alt=""
           />
         </div>
