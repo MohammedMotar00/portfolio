@@ -40,7 +40,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/5MyLWfp/Screenshot-10.png" alt="" />
+          <img src="" alt="" />
           <div className="portfolio__link">
             <a
               href="https://tic-tac-toe-game-3f67b.web.app/"
@@ -74,7 +74,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/q5ZvcV0/Screenshot-3.png" alt="" />
+          <img src="" alt="" />
           <div className="portfolio__link">
             <a
               href="https://netflix-clone-fd9e4.web.app/"
@@ -90,7 +90,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/T272XwP/Screenshot-4.png" alt="" />
+          <img src="" alt="" />
           <div className="portfolio__link">
             <a
               href="https://website-clone.web.app/"
@@ -106,7 +106,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/5LkGSHX/Screenshot-5.png" alt="" />
+          <img src="" alt="" />
           <div className="portfolio__link">
             <a
               href="https://biltema-clone.web.app/"
@@ -122,7 +122,7 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/H7KRWn5/Screenshot-6.png" alt="" />
+          <img src="" alt="" />
           <div className="portfolio__link">
             <a
               href="https://clone-7da8f.web.app/"
