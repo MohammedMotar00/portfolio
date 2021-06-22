@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import ConnectFourImg from "../../Img/connect-four.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -55,13 +56,15 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="https://i.ibb.co/M8fQ4x0/Screenshot-2.png" alt="" />
+          <img src={ConnectFourImg} alt="" />
           <div className="portfolio__link">
             <a
               href="https://connect-four-game-f50f5.web.app/"
               className="portfolio__link-name"
             >
-              View details
+              {/* View details */}
+              <p>JavaScript</p>
+              <p>Css</p>
             </a>
           </div>
         </div>
