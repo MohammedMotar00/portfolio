@@ -106,7 +106,6 @@ function Portfolio({ setPortfolioActive }) {
               href="https://connect-four-game-f50f5.web.app/"
               className="portfolio__link-name"
             >
-              {/* View details */}
               <p>React</p>
             </a>
           </div>
@@ -123,7 +122,6 @@ function Portfolio({ setPortfolioActive }) {
               href="https://clone-app-10ecb.web.app/"
               className="portfolio__link-name"
             >
-              {/* View details */}
               <p>React</p>
               <p>SCSS</p>
             </a>
