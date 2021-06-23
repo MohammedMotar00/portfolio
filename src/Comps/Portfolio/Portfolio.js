@@ -110,54 +110,6 @@ function Portfolio({ setPortfolioActive }) {
             </a>
           </div>
         </div>
-
-        <div
-          className="portfolio__img"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        >
-          <img src="" alt="" />
-          <div className="portfolio__link">
-            <a
-              href="https://website-clone.web.app/"
-              className="portfolio__link-name"
-            >
-              View details
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="portfolio__img"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        >
-          <img src="" alt="" />
-          <div className="portfolio__link">
-            <a
-              href="https://biltema-clone.web.app/"
-              className="portfolio__link-name"
-            >
-              View details
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="portfolio__img"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        >
-          <img src="" alt="" />
-          <div className="portfolio__link">
-            <a
-              href="https://clone-7da8f.web.app/"
-              className="portfolio__link-name"
-            >
-              View details
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
