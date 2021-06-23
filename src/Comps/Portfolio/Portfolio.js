@@ -1,5 +1,9 @@
 import React, { useRef, useEffect } from "react";
+
 import ConnectFourImg from "../../Img/connect-four.png";
+import NetflixImage from "../../Img/netflix.png";
+import DisneyPlusImage from "../../Img/disney-plus.png";
+import SlackImage from "../../Img/slack.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,13 +44,52 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src="" alt="" />
+          <img src={NetflixImage} alt="" />
           <div className="portfolio__link">
             <a
-              href="https://tic-tac-toe-game-3f67b.web.app/"
+              href="https://netflix-clone-build-4519a.web.app/"
               className="portfolio__link-name"
             >
-              View details
+              <p>React</p>
+              <p>Redux</p>
+              <p>Styled Components</p>
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src={DisneyPlusImage} alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://disney-plus-clone-app-8b3e5.web.app/"
+              className="portfolio__link-name"
+            >
+              <p>React</p>
+              <p>Redux</p>
+              <p>Styled Components</p>
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src={SlackImage} alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://slack-clone-1ff2b.web.app/"
+              className="portfolio__link-name"
+            >
+              <p>React</p>
+              <p>Redux</p>
+              <p>Styled Components</p>
+              <p>Firebase Hooks</p>
             </a>
           </div>
         </div>
@@ -63,24 +106,7 @@ function Portfolio({ setPortfolioActive }) {
               className="portfolio__link-name"
             >
               {/* View details */}
-              <p>JavaScript</p>
-              <p>Css</p>
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="portfolio__img"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        >
-          <img src="" alt="" />
-          <div className="portfolio__link">
-            <a
-              href="https://netflix-clone-fd9e4.web.app/"
-              className="portfolio__link-name"
-            >
-              View details
+              <p>React</p>
             </a>
           </div>
         </div>

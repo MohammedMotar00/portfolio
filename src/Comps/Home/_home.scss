@@ -29,6 +29,7 @@
 }
 
 .home__scroll-link {
+  display: flex;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   color: var(--white-color);
@@ -36,6 +37,8 @@
 
 .home__scroll-link:hover {
   text-shadow: -5px -2px 13px rgb(0, 0, 0);
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 .home__scroll-link:hover .arrowDown {

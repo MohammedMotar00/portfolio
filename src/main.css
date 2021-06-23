@@ -249,6 +249,9 @@ img {
 }
 
 .home__scroll-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -259,6 +262,8 @@ img {
 
 .home__scroll-link:hover {
   text-shadow: -5px -2px 13px black;
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 .home__scroll-link:hover .arrowDown {

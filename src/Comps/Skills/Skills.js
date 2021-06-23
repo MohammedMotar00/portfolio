@@ -139,13 +139,7 @@ function Skills({ setSkillsActive }) {
         </div>
 
         <div className="skills__img" data-aos="fade-down" data-aos-delay="300">
-          <img
-            // src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            // src="https://www.haconsultancies.com/wp-content/uploads/2017/10/html-programming-1030x682.jpg"
-            // src="https://sdtimes.com/wp-content/uploads/2016/03/0303.sdt-ada.png"
-            src={image}
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
       </div>
     </section>
