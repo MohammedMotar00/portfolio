@@ -4,6 +4,7 @@ import ConnectFourImg from "../../Img/connect-four.png";
 import NetflixImage from "../../Img/netflix.png";
 import DisneyPlusImage from "../../Img/disney-plus.png";
 import SlackImage from "../../Img/slack.png";
+import MicrosoftImage from "../../Img/microsoft.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -107,6 +108,24 @@ function Portfolio({ setPortfolioActive }) {
             >
               {/* View details */}
               <p>React</p>
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src={MicrosoftImage} alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://clone-app-10ecb.web.app/"
+              className="portfolio__link-name"
+            >
+              {/* View details */}
+              <p>React</p>
+              <p>SCSS</p>
             </a>
           </div>
         </div>
