@@ -108,7 +108,8 @@ function Portfolio({ setPortfolioActive }) {
               className="portfolio__link-name"
             >
               <p>React</p>
-              <p>SCSS</p>
+              <p>Styled Components</p>
+              <p>Material UI</p>
             </a>
           </div>
         </div>
