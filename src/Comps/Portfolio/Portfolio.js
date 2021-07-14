@@ -5,6 +5,7 @@ import NetflixImage from "../../Img/netflix.png";
 import DisneyPlusImage from "../../Img/disney-plus.png";
 import SlackImage from "../../Img/slack.png";
 import MicrosoftImage from "../../Img/microsoft.png";
+import CovidImage from "../../Img/covid-19.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -100,13 +101,14 @@ function Portfolio({ setPortfolioActive }) {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <img src={ConnectFourImg} alt="" />
+          <img src={CovidImage} alt="" />
           <div className="portfolio__link">
             <a
-              href="https://connect-four-game-f50f5.web.app/"
+              href="https://covid-19-tracker-4a1c2.web.app/"
               className="portfolio__link-name"
             >
               <p>React</p>
+              <p>SCSS</p>
             </a>
           </div>
         </div>
@@ -124,6 +126,22 @@ function Portfolio({ setPortfolioActive }) {
             >
               <p>React</p>
               <p>SCSS</p>
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="portfolio__img"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <img src={ConnectFourImg} alt="" />
+          <div className="portfolio__link">
+            <a
+              href="https://connect-four-game-f50f5.web.app/"
+              className="portfolio__link-name"
+            >
+              <p>React</p>
             </a>
           </div>
         </div>

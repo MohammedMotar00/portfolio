@@ -71,6 +71,20 @@ function Skills({ setSkillsActive }) {
             data-aos="zoom-in"
             data-aos-delay="700"
           >
+            BOOTSTRAP
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            STYLED COMPONENTS
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
             TAILWIND CSS
           </span>
           <span

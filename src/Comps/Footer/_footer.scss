@@ -8,6 +8,8 @@
       font-size: var(--normal-font-size);
       color: var(--white-color);
       margin-bottom: var(--mb-2);
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 
     .footer__link {
@@ -16,6 +18,10 @@
       .footer__link:hover {
         color: var(--first-color);
       }
+    }
+
+    .footer__text {
+      color: white;
     }
 
     .footer__social {
