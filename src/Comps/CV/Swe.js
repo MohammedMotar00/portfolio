@@ -32,7 +32,7 @@ function Swe() {
           - 2019
         </p>
         <p>
-          <strong>yrkeshögskoleutbildning:</strong> Frontend utvecklare,
+          <strong>Yrkeshögskoleutbildning:</strong> Frontend utvecklare,
           EC-Utbildning, Helsingborg 2019 - 2021
         </p>
       </div>
