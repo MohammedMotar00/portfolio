@@ -70,6 +70,7 @@ body {
   font-weight: var(--font-medium);
   color: var(--text-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
@@ -341,24 +342,35 @@ img {
     align-items: center;
   }
 
-  .portfolio__container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
   .contact__container {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 
-  .contact__form {
-    width: 380px;
-  }
-
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 }
 

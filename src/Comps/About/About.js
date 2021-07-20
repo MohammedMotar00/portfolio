@@ -71,17 +71,6 @@ function About({ setAboutActive }) {
           >
             Front-End Developer
           </span>
-          {/* <p className="about__text" data-aos="fade-down" data-aos-delay="500">
-            I'm a 20 years old and i am studying FrontEnd developing in
-            Helsingborg college - EC Utbildning! <br /> <br /> This is my second
-            year in college! I have learned a lot of things until today. I am a
-            fast learner and flexible guy that can use google to solve the
-            problems. <br /> I am enjoying programming in my spare time. <br />{" "}
-            <br /> If you want to know more about me, you can find me here{" "}
-            <a href="#contact" style={{ color: "blue" }}>
-              contact page!
-            </a>
-          </p> */}
 
           <p className="about__text" data-aos="fade-down" data-aos-delay="500">
             I'm a 21 years old and i am Front-end Developer <br /> <br /> I

@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import GitHubIcon from "@material-ui/icons/GitHub";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -52,7 +56,7 @@ function Contact({ setContactActive }) {
             data-aos-duration="1300"
             data-aos="fade-down"
           >
-            mohammed.motar.mm@gmail.com
+            mohammed.motar10@gmail.com
           </span>
 
           <h3
@@ -87,41 +91,34 @@ function Contact({ setContactActive }) {
           </span>
         </div>
 
-        <form onSubmit={preventRefresh} className="contact__form">
-          <div className="contact__inputs">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              className="contact__input"
-              data-aos="fade-down"
-              data-aos-duration="1300"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="contact__input"
-              data-aos="fade-down"
-              data-aos-duration="1300"
-            />
+        <div className="about__social">
+          <div data-aos-delay="700" data-aos="fade-left">
+            <a
+              href="https://www.facebook.com/mohammed.motar.3"
+              className="about__social-icon"
+            >
+              <FacebookIcon />
+            </a>
           </div>
 
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your message..."
-            className="contact__input"
-            data-aos-duration="1300"
-            data-aos="fade-down"
-          ></textarea>
+          <div data-aos-delay="700" data-aos="fade-up">
+            <a
+              href="https://github.com/MohammedMotar00"
+              className="about__social-icon"
+            >
+              <GitHubIcon />
+            </a>
+          </div>
 
-          <button type="submit" className="contact__button">
-            Send
-          </button>
-        </form>
+          <div data-aos-delay="700" data-aos="fade-right">
+            <a
+              href="https://www.instagram.com/mohammed.alka3bii/"
+              className="about__social-icon"
+            >
+              <InstagramIcon />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

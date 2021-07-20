@@ -1,5 +1,6 @@
 .contact__container {
   row-gap: 2rem;
+  text-align: center;
 
   .contact__subtitle {
     font-size: var(--normal-font-size);
@@ -38,5 +39,30 @@
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+  }
+}
+
+.about__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__social-icon {
+  font-size: 1.4rem;
+  margin: 0 var(--mb-1);
+}
+
+.about__social-icon:hover {
+  color: var(--first-color);
+}
+
+.modal_language {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .about__social {
+    flex-direction: row;
   }
 }
