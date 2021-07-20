@@ -33,10 +33,8 @@ function Eng() {
           2016 - 2019
         </p>
         <p>
-          <strong>
-            Vocational education: Frontend developer, EC-Utbildning, Helsingborg
-            2019 - 2021
-          </strong>
+          <strong>Vocational education:</strong> Frontend developer,
+          EC-Utbildning, Helsingborg 2019 - 2021
         </p>
       </div>
 
