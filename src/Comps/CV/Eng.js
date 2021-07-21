@@ -58,9 +58,9 @@ function Eng() {
           I have a great interest in frontend development and this is something
           I am currently passionate about. I have graduated and gained
           experience from my Learning at work periods and I feel that I am ready
-          to give 100%. In addition to this, I have a big interest in training.
-          During my free time when I'm not exercising, I usually hang out with
-          friends or family.
+          to give 100%. In addition to this, I have a big interest in training
+          (gym, football). During my free time when I'm not exercising, I
+          usually hang out with friends or family.
         </p>
       </div>
 
