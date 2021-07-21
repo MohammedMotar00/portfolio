@@ -58,8 +58,8 @@ function Swe() {
           jag i dagsläget brinner för. Jag har lärt mig en hel del och efter att
           jag har tagit examen och fått erfarenhet från mina LIA perioder känner
           jag mig redo för att ge 100%. Utöver detta så har jag ett stort
-          intresse för träning, brukar gymma och spela fotboll. Under min fritid
-          när jag inte tränar så brukar jag umgås med vänner eller familj.
+          intresse för träning. Under min fritid när jag inte tränar så brukar
+          jag umgås med vänner eller familj.
         </p>
       </div>
 
