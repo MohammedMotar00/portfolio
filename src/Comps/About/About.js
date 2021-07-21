@@ -116,12 +116,6 @@ function About({ setAboutActive }) {
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                {/* <h4>Centered Modal</h4>
-                <p>
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo
-                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                  risus, porta ac consectetur ac, vestibulum at eros.
-                </p> */}
                 {selectedIndex == 0 && <Eng />}
                 {selectedIndex == 1 && <Swe />}
               </Modal.Body>
@@ -141,7 +135,7 @@ function About({ setAboutActive }) {
           <div className="about__social">
             <div data-aos-delay="700" data-aos="fade-left">
               <a
-                href="https://www.facebook.com/mohammed.motar.3"
+                href="https://www.facebook.com/mohammed.motar.16"
                 className="about__social-icon"
               >
                 <FacebookIcon />
@@ -159,7 +153,7 @@ function About({ setAboutActive }) {
 
             <div data-aos-delay="700" data-aos="fade-right">
               <a
-                href="https://www.instagram.com/mohammed.alka3bii/"
+                href="https://www.instagram.com/motar.dev/"
                 className="about__social-icon"
               >
                 <InstagramIcon />
