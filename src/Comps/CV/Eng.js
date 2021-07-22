@@ -107,9 +107,9 @@ function Eng() {
 
       <div>
         <h3>LANGUAGE SKILLS</h3>
+        <p>Arabic - mother tongue</p>
         <p>Swedish - good knowledge of speech and writing</p>
         <p>English - good knowledge of speech and writing</p>
-        <p>Arabic - good knowledge of speech and writing</p>
       </div>
 
       <hr />

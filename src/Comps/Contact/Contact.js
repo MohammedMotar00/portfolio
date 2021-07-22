@@ -56,7 +56,9 @@ function Contact({ setContactActive }) {
             data-aos-duration="1300"
             data-aos="fade-down"
           >
-            mohammed.motar10@gmail.com
+            <a href="mailto:mohammed.motar10@gmail.com">
+              mohammed.motar10@gmail.com
+            </a>
           </span>
 
           <h3
@@ -72,7 +74,7 @@ function Contact({ setContactActive }) {
             data-aos-duration="1300"
             data-aos="fade-down"
           >
-            (+46) 722 816 330
+            <a href="tel:+46722816330">(+46) 722 816 330</a>
           </span>
         </div>
 

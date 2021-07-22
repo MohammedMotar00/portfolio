@@ -92,6 +92,13 @@ function Skills({ setSkillsActive }) {
             data-aos="zoom-in"
             data-aos-delay="800"
           >
+            JQUERY
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
             REACT
           </span>
           <span
@@ -107,6 +114,13 @@ function Skills({ setSkillsActive }) {
             data-aos-delay="800"
           >
             NEXT.JS
+          </span>
+          <span
+            className="skills__name"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            MATERIAL UI
           </span>
           <span
             className="skills__name"

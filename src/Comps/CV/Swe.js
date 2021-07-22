@@ -103,9 +103,9 @@ function Swe() {
 
       <div>
         <h3>SPRÅKKUNSKAPER</h3>
+        <p>Arabiska - modersmål</p>
         <p>Svenska - goda kunskaper i tal och skrift</p>
         <p>Engelska - goda kunskaper i tal och skrift</p>
-        <p>Arabiska - goda kunskaper i tal och skrift</p>
       </div>
 
       <hr />
