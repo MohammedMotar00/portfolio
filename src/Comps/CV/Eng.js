@@ -9,9 +9,21 @@ function Eng() {
         <p>
           <strong>Date of birth:</strong> 2000-02-15
         </p>
-        <p>
-          <strong>Address:</strong> Bokvägen 15A
+
+        <p style={{ display: "flex" }}>
+          <strong>Address:</strong>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginLeft: "5px",
+            }}
+          >
+            <span>Bokvägen 15A</span>
+            <span>29143, Kristianstad</span>
+          </div>
         </p>
+
         <p>
           <strong>Phone number:</strong> 072 281 63 30
         </p>
@@ -43,7 +55,8 @@ function Eng() {
       <div>
         <h3>WORK EXPERIENCE</h3>
         <p>
-          Learning at work1 and learning at work2 at Exakta Software, Hässleholm{" "}
+          Learning at work1 and learning at work2 at Exakta Software, Hässleholm
+          <br />
           <strong>(Learning at work period = 12 weeks)</strong>
         </p>
         <p>Internship in England for 3 weeks</p>

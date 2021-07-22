@@ -74,27 +74,12 @@ function Contact({ setContactActive }) {
           >
             (+46) 722 816 330
           </span>
-
-          <h3
-            className="contact__subtitle"
-            data-aos-duration="1300"
-            data-aos="fade-down"
-          >
-            ADRESS
-          </h3>
-          <span
-            className="contact__text"
-            data-aos-duration="1300"
-            data-aos="fade-down"
-          >
-            Bokvägen 15A
-          </span>
         </div>
 
         <div className="about__social">
           <div data-aos-delay="700" data-aos="fade-left">
             <a
-              href="https://www.facebook.com/mohammed.motar.3"
+              href="https://www.facebook.com/mohammed.motar.16"
               className="about__social-icon"
             >
               <FacebookIcon />
@@ -112,7 +97,7 @@ function Contact({ setContactActive }) {
 
           <div data-aos-delay="700" data-aos="fade-right">
             <a
-              href="https://www.instagram.com/mohammed.alka3bii/"
+              href="https://www.instagram.com/motar.dev/"
               className="about__social-icon"
             >
               <InstagramIcon />

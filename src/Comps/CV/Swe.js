@@ -9,8 +9,18 @@ function Swe() {
         <p>
           <strong>Födelsedatum:</strong> 2000-02-15
         </p>
-        <p>
-          <strong>Adress:</strong> Bokvägen 15A
+        <p style={{ display: "flex" }}>
+          <strong>Adress:</strong>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginLeft: "5px",
+            }}
+          >
+            <span>Bokvägen 15A</span>
+            <span>29143, Kristianstad</span>
+          </div>
         </p>
         <p>
           <strong>Telefonnummer:</strong> 072 281 63 30
@@ -42,7 +52,7 @@ function Swe() {
       <div>
         <h3>ARBETSLIVSERFARENHET</h3>
         <p>
-          LIA1 och LIA2 hos Exakta Software, Hässleholm{" "}
+          LIA1 och LIA2 hos Exakta Software, Hässleholm <br />
           <strong>(LIA period = 12 veckor)</strong>
         </p>
         <p>APL i England för 3 veckor</p>

@@ -82,6 +82,7 @@ function About({ setAboutActive }) {
               variant="contained"
               color="primary"
               onClick={() => setOpenModal(true)}
+              style={{ marginLeft: "10px" }}
             >
               here!
             </Button>
@@ -125,8 +126,8 @@ function About({ setAboutActive }) {
                 </Button>
               </Modal.Footer>
             </Modal>
-            <br /> <br /> If you want to know more about me, you can find me
-            here{" "}
+            <br /> <br /> If you want to know more about me, <br /> you can find
+            me here{" "}
             <a href="#contact" style={{ color: "blue" }}>
               contact page!
             </a>
