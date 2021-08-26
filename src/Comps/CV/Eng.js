@@ -45,7 +45,7 @@ function Eng() {
           2016 - 2019
         </p>
         <p>
-          <strong>Vocational education:</strong> Frontend developer,
+          <strong>Polytechnic education:</strong> Front End Developer,
           EC-Utbildning, Helsingborg 2019 - 2021
         </p>
       </div>
@@ -55,9 +55,9 @@ function Eng() {
       <div>
         <h3>WORK EXPERIENCE</h3>
         <p>
-          Learning at work1 and learning at work2 at Exakta Software, Hässleholm
+          Internship1 and Internship2 at Exakta Software, Hässleholm
           <br />
-          <strong>(Learning at work period = 12 weeks)</strong>
+          <strong>(Internship period = 12 weeks)</strong>
         </p>
         <p>Internship in England for 3 weeks</p>
         <p>Holiday work, Kristianstad 2017</p>
@@ -68,11 +68,11 @@ function Eng() {
       <div>
         <h3>INTERESTS</h3>
         <p>
-          I have a great interest in frontend development and this is something
+          I have a great interest in Front End development and this is something
           I am currently passionate about. I have graduated and gained
-          experience from my Learning at work periods and I feel that I am ready
+          experience from my Internship periods and I feel that I am ready
           to give 100%. In addition to this, I have a big interest in training
-          (gym, football). During my free time when I'm not exercising, I
+          (gym & football). During my free time when I'm not exercising, I
           usually hang out with friends or family.
         </p>
       </div>

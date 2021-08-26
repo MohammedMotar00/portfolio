@@ -69,12 +69,11 @@ function About({ setAboutActive }) {
             data-aos="fade-down"
             data-aos-delay="350"
           >
-            Front-End Developer
+            Front End Developer
           </span>
 
           <p className="about__text" data-aos="fade-down" data-aos-delay="500">
-            I'm a 21 years old and i am Front-end Developer <br /> <br /> I
-            studied two years in Helsingborg college - EC Utbildning! <br /> I
+            I am 21 years old and i am Front End Developer <br /> <br /> I studied for two years at Helsingborgs Polytechnic School - EC Utbildning! <br /> I
             have learned a lot of things until today. I am a fast learner and
             flexible guy that can use google to solve the problems. <br />
             <br /> You can read my CV{" "}
